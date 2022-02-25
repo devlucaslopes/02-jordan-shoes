@@ -1,0 +1,134 @@
+/*
+* Resetando o estilo padrão do navegador
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+* Estilos do meu site
+*/
+
+h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.promo-code,
+footer {
+  background: #181818;
+  color: #f9f9f9;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1.6rem 0;
+}
+
+header {
+  padding: 1.6rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+header a {
+  color: #181818;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+#hero {
+  width: 100%;
+  height: 38rem;
+  padding: 1.6rem 0;
+  background-color: #181818;
+  background-image: url("../imgs/hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 0;
+
+  color: #f9f9f9;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(24, 24, 24, 0.5);
+  z-index: 1;
+}
+
+#hero div.container {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 2;
+  position: relative;
+}
+
+.hero-subtitle {
+  max-width: 46rem;
+  margin-top: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.highlight {
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.highlight h1 {
+  color: #181818;
+  margin-bottom: 1.6rem;
+}
+
+.shoes-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.shoes-item {
+  padding: 8rem 2.5rem;
+  background: #ebe9ea;
+}

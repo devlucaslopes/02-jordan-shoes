@@ -1,0 +1,42 @@
+/* Até 1024px esses estilos serão aplicados */
+@media (max-width: 1259px) {
+  h1 {
+    font-weight: 600;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .promo-code,
+  footer {
+    font-size: 1.4rem;
+  }
+
+  header a {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .shoes-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Até 950px esses estilos serão aplicados */
+@media (max-width: 950px) {
+  .shoes-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Até 600px esses estilos serão aplicados */
+@media (max-width: 600px) {
+  .shoes-list {
+    grid-template-columns: 1fr;
+  }
+}
